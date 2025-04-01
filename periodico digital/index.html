@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periódico Digital</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="https://www.24horas.cl/noticiarios/24tarde">Nacionales</a>
+        <a href="https://www.24horas.cl/internacional/noticias-bbc">Internacionales</a>
+    </div>
+
+    <div id="main">
+        <header>
+            <div class="logo">Noticias 24</div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        </header>
+
+        <section class="banner">
+            <h1>El gobierno anuncia nuevas reformas económicas</h1>
+            <p>En un discurso realizado ayer, el presidente detalló las medidas que se implementarán...</p>
+            <a href="https://www.gob.cl/noticias/presentamos-el-proyecto-de-reforma-tributaria-que-busca-avanzar-hacia-un-chile-justo-y-desarrollado/"></a>
+        </section>
+
+        <section class="Noticias">
+            <h1>Alarma de TSUNAMI</h1>
+            <p>Alerta a las autoridades de todo el mundo por posible catástrofe global</p>
+        </section>
+
+        <div class="containerCarousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="assets/Images/futbolistas.webp" alt="Los Angeles" style="width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="assets/Images/zele 2.webp" alt="Chicago" style="width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="assets/Images/armadaa.jpg" alt="New York" style="width:100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="content">
+            <h2>Últimas Noticias</h2>
+            
+            <div class="noticias-container">
+                <!-- Tarjeta 1 -->
+                <article>
+                    <img src="assets/Images/economia.webp" alt="Crisis económica" class="news-image" />
+                    <div class="text">
+                        <h3><a href="detalleNoticia.html">Crisis económica: ¿Qué medidas tomará el gobierno?</a></h3>
+                        <p>El presidente de la nación anunció nuevas políticas fiscales que afectarán a las empresas...</p>
+                        <a href="detalleNoticia.html">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article>
+                    <img src="assets/Images/clima.jpg" alt="Cumbre internacional" class="news-image" />
+                    <div class="text">
+                        <h3><a href="informacionsecundaria.html">La cumbre internacional de cambio climático concluye en París</a></h3>
+                        <p>Delegados de más de 50 países se reunieron para discutir soluciones urgentes para el planeta...</p>
+                        <a href="informacionsecundaria.html">Leer más</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Noticias 24. Todos los derechos reservados.</p>
+            <p><a href="#">Contáctanos</a> | <a href="#">Legal</a> | <a href="#">Privacidad</a></p>
+        </footer>
+    </div>
+
+    <script src="assets/js/Script.js"></script>
+
+    <!-- Script para la barra lateral -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
+
+</html>
